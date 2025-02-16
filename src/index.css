@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+
+@theme{
+    --font-oswald: Oswald, sans-serif;
+    --font-russo: Russo One, sans-serif;
+    --font-roboto: Roboto, sans-serif;
+    --font-montserrat: Montserrat, sans-serif;
+    --font-bebas: 'Bebas Neue', sans-serif;
+
+    --color-dark: #121212;
+    --color-light: #ffffff;
+    --color-primary-dark: #EAEAEA;
+    --color-primary-light: #222222;
+    --color-secondary: #B0B0B0;
+    --color-accent-magenta: #E6007E;
+    --color-button-magenta: #FF007F;
+    --color-hover-magenta: #9B0056;
+}
+
+
+
+body{
+    background-color: #121212;
+}
