@@ -43,7 +43,7 @@ const Header = () => {
             hasScrolled ? 'py-2 max-md:py-1 bg-gradient-to-r from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)]' : 'py-6 md:py-4 max-md:py-2')}>
             <nav className='flex justify-between items-center max-md:justify-between'>
             <a href='/' className=''>
-                <img src="/icons/logo.png" alt="logo" width={150}/>
+                <img src="./icons/logo.png" alt="logo" width={150}/>
             </a>
             
             
@@ -58,7 +58,7 @@ const Header = () => {
                 ))}
                 
                 <div className='hidden max-lg:block w-full h-full inset-0 absolute bg-[linear-gradient(to_right,rgba(0,0,0,0.5)_2px,transparent_2px),linear-gradient(to_bottom,rgba(0,0,0,0.5)_2px,transparent_2px)] bg-[size:24px_24px] z-0'>
-                   <img src="/images/slidebar.png" alt="slidebar" className='absolute w-full object-contain h-full' /> 
+                   <img src="./images/slidebar.png" alt="slidebar" className='absolute w-full object-contain h-full' /> 
                 </div>
                 {/* <li className='hover:underline'><a href="/"></a></li>
                 <li>•</li>
@@ -70,9 +70,9 @@ const Header = () => {
             </ul>
 
             <div className='flex  p-1 rounded gap-1 items-center'>
-                <Button title="количка" icon="/icons/cart.png"></Button>
+                <Button title="количка" icon="./icons/cart.png"></Button>
                 <div className='w-0.25 h-[24px] bg-light'></div>
-                <Button title="профил" icon="/icons/user-profile.png"></Button>
+                <Button title="профил" icon="./icons/user-profile.png"></Button>
             </div>
 
             <button className='hidden max-lg:block z-10' onClick={() => setIsOpen((prevState) => !prevState)}>

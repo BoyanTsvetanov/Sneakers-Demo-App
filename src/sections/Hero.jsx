@@ -8,7 +8,7 @@ const Hero = () => {
          className='absolute right-0 bottom-0 z-1 transition-all duration-500 hover:rotate-12 max-md:w-[500px] max-md:bottom-0'/> */}
 
         <video
-            src="/videos/hero.mp4"
+            src="./videos/hero.mp4"
             autoPlay
             muted
             loop
