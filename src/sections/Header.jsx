@@ -76,7 +76,7 @@ const Header = () => {
             </div>
 
             <button className='hidden max-lg:block z-10' onClick={() => setIsOpen((prevState) => !prevState)}>
-                <img src={`/icons/${isOpen ? 'close' : 'hamburger'}.svg`} alt="menu" />
+                <img src={`./icons/${isOpen ? 'close' : 'hamburger'}.svg`} alt="menu" />
             </button>
             
             </nav>
