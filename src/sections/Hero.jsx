@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className='relative h-[80vh] max-md:h-[60%] overflow-hidden' name="Начало">
+    <section className='relative h-[80vh] max-md:h-[60vh] overflow-hidden' name="Начало">
         <div className='group'>
         {/* <img src="/images/hero.png" alt="hero" width={700}
          className='absolute right-0 bottom-0 z-1 transition-all duration-500 hover:rotate-12 max-md:w-[500px] max-md:bottom-0'/> */}

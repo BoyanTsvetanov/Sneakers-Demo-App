@@ -8,10 +8,10 @@ const Products = () => {
 
 
   return (
-    <section className='relative h-screen' name="Продукти">
+    <section name="Продукти">
         <h1 className='ml-16 pl-1 mt-8 text-2xl border-l-accent-magenta border-l-4 font-bebas font-bold'>Продукти</h1>
 
-        <div className="absolute mt-8 mx-16 max-md:mx-8 rounded-3xl p-1 flex gap-6 max-sm:gap-1.5 bg-gradient-to-br from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)]">
+        <div className="mt-8 mx-16 max-md:mx-8 rounded-3xl p-1 flex gap-6 max-sm:gap-1.5 bg-gradient-to-br from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)]">
             <button className='hidden max-sm:inline-block z-10 bg-light w-14 h-min rounded-full mt-1 ml-1' onClick={() => setFilter((prevState) => !prevState)}>
                 <img src={`./icons/${filter? 'close' : 'hamburger'}.svg`} alt="menu" className='w-full h-full object-contain p-2' />
             </button>
