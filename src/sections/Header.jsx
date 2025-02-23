@@ -3,6 +3,7 @@ import Button from '../components/Button'
 import { navLinks } from '../constants'
 import clsx from 'clsx'
 import { Link as LinkScroll } from "react-scroll";
+import { Sun, Moon } from 'lucide-react';
 
 
 const Header = () => {
@@ -37,15 +38,38 @@ const Header = () => {
         </LinkScroll>
       );
 
+      const [darkMode, setDarkMode] = useState(false);
+
+        // Load theme from localStorage on mount
+        useEffect(() => {
+            const savedTheme = localStorage.getItem('theme') === 'dark';
+            setDarkMode(savedTheme);
+            document.documentElement.classList.toggle('dark', savedTheme);
+        }, []);
+
+        // Toggle theme and save to localStorage
+        const toggleTheme = () => {
+            const newTheme = !darkMode;
+            setDarkMode(newTheme);
+            localStorage.setItem('theme', newTheme ? 'dark' : 'light');
+            document.documentElement.classList.toggle('dark', newTheme);
+        };
+
 
     return (
         <header className={clsx('px-16 max-md:px-8 fixed z-50 w-full transition-all duration-500',
-            hasScrolled ? 'py-2 max-md:py-1 bg-gradient-to-r from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)]' : 'py-6 md:py-4 max-md:py-2')}>
+            hasScrolled ? 'py-2 max-md:py-1 not-dark:bg-dark dark:bg-[hsl(259,77%,25%)]' : 'py-6 md:py-4 max-md:py-2')}>
             <nav className='flex justify-between items-center max-md:justify-between'>
             <a href='/' className=''>
                 <img src="./icons/logo.png" alt="logo" width={150}/>
             </a>
             
+            <button
+                onClick={toggleTheme}
+                className="p-2 rounded-lg bg-light dark:bg-dark transition-colors"
+            >
+                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             
             <ul className={clsx('flex justify-center text-light text-xl items-center gap-16 max-lg:opacity-0 max-lg:absolute max-lg:flex-col max-lg:bg-light max-lg:text-4xl max-lg:text-primary-dark max-lg:w-[100%] max-lg:h-screen max-lg:top-0 max-lg:right-0 max-lg:bg-gradient-to-br from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)] max-lg:size-8 max-lg:bor', isOpen ? 'max-lg:opacity-100' : 'max-lg:pointer-events-none')}>
                 {navLinks.map((item) => (
@@ -76,7 +100,7 @@ const Header = () => {
             </div>
 
             <button className='hidden max-lg:block z-10' onClick={() => setIsOpen((prevState) => !prevState)}>
-                <img src={`./icons/${isOpen ? 'close' : 'hamburger'}.svg`} alt="menu" />
+                <img src={`./icons/${isOpen ? 'close' : 'hamburger'}.svg`} alt="menu" className={clsx('p-1', hasScrolled && 'not-dark:bg-light')} />
             </button>
             
             </nav>

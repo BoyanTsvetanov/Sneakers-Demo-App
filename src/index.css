@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
 
 @theme{
@@ -15,12 +17,19 @@
     --color-primary-light: #222222;
     --color-secondary: #B0B0B0;
     --color-accent-magenta: #E6007E;
+    --color-dark-teal: hsl(259,77%,25%);
     --color-button-magenta: #FF007F;
     --color-hover-magenta: #9B0056;
 }
 
 
+body {
+    @apply bg-light text-primary-light transition-colors duration-300;
+  }
+  
+  /* Dark Mode */
+  .dark body {
+    @apply bg-dark text-primary-dark;
+  }
 
-body{
-    background-color: #121212;
-}
+  /* bg-gradient-to-r from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)] */
