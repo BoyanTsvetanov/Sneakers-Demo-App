@@ -71,7 +71,7 @@ const Header = () => {
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
             </button>
             
-            <ul className={clsx('flex justify-center text-light text-xl items-center gap-16 max-lg:opacity-0 max-lg:absolute max-lg:flex-col max-lg:bg-light max-lg:text-4xl max-lg:text-primary-dark max-lg:w-[100%] max-lg:h-screen max-lg:top-0 max-lg:right-0 max-lg:bg-gradient-to-br from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)] max-lg:size-8 max-lg:bor', isOpen ? 'max-lg:opacity-100' : 'max-lg:pointer-events-none')}>
+            <ul className={clsx('flex justify-center text-light text-xl items-center gap-16 max-lg:opacity-0 max-lg:absolute max-lg:flex-col max-lg:bg-light max-lg:text-4xl max-lg:text-primary-dark max-lg:w-[100%] max-lg:h-screen max-lg:top-0 max-lg:right-0 max-lg:bg-gradient-to-br from-accent-green to-[hsl(259,77%,25%)] max-lg:size-8 max-lg:bor', isOpen ? 'max-lg:opacity-100' : 'max-lg:pointer-events-none')}>
                 {navLinks.map((item) => (
                     <li key={item.label} className='z-10 hover:text-light'>
                     <NavLink title={item.label}
