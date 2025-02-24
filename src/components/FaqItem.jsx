@@ -49,11 +49,11 @@ const FaqItem = ({ item, index }) => {
       <div
         className={clsx(
           "dark:bg-light bg-dark/20 -bottom-7 -top-7 left-0 right-0 -z-1 rounded-3xl opacity-0 transition-opacity duration-500 absolute",
-          active && "opacity-100",
+          active && "opacity-100 ",
         )}
       >
         <div className="dark:bg-dark bg-light absolute inset-0.5 -z-1 rounded-3xl" />
-        <div className="absolute left-8 top-0 h-0.5 w-40 dark:bg-dark-teal bg-accent-magenta" />
+        <div className="absolute left-8 top-0 h-0.5 w-40 dark:bg-dark-teal bg-accent-green" />
       </div>
 
     </div>

@@ -8,12 +8,16 @@ import shoe3 from "../assets/products/shoe3.png";
 import shoe4 from "../assets/products/shoe4.png";
 import shoe5 from "../assets/products/shoe5.png";
 
+import phone from "../assets/icons/phone.png";
+import email from "../assets/icons/email.png";
+import chat from "../assets/icons/chat.png";
+
 
 
 export const navLinks = [
     { href: "#home", label: "Начало" },
     { href: "#products", label: "Продукти" },
-    { href: "#about-us", label: "Инфо" },
+    { href: "#about-us", label: "За нас" },
     { href: "#contact-us", label: "Контакти" },
 ];
 
@@ -153,6 +157,24 @@ export const products = [
 //         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
 //     }
 // ];
+
+export const contacts = {
+  phone: {
+    title: "Телефон",
+    number: "+123456789",
+    icon: phone,
+    cta: "Обадете се",
+    ctaAction: () => window.location.href = 'tel:+123456789'  // Action for phone (call)
+  },
+  email: {
+    title: "Имейл",
+    address: "johndoe@example.com",
+    icon: email,
+    cta: "Пишете ни",
+    ctaAction: () => window.location.href = 'mailto:johndoe@example.com'  // Action for email (send mail)
+  }
+};
+
 
 
 export const faq = [

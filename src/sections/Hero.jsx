@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
 
         <div className='absolute flex flex-col bg-dark/60 text-light backdrop-blur-sm lg:ml-48 md:mx-12 max-md:mx-10 top-[50%] translate-y-[-50%] px-8 py-4 rounded-xl text-pretty'>
-            <h1 className='text-4xl max-md:text-3xl font-bebas uppercase font-bold max-sm:text-2xl'>Твоята <span className='text-accent-magenta italic'>енергия</span><br />Твоите <span className='text-accent-magenta italic'>маратонки</span></h1>
+            <h1 className='text-4xl max-md:text-3xl font-bebas uppercase font-bold max-sm:text-2xl'>Твоята <span className='text-accent-green italic'>енергия</span><br />Твоите <span className='text-accent-green italic'>маратонки</span></h1>
             <p className='text-lg mt-2 font-montserrat max-sm:text-sm'>Открий силата в себе си и постигни нови върхове.</p>
         </div>
     </section>

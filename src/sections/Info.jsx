@@ -8,7 +8,8 @@ const Info = () => {
             {/* <div className='w-2 h-full bg-accent-magenta'></div> */}
         </div>
 
-        <div name="Инфо" className='border-accent-magenta/60 dark:border-light not-dark:border-dark dark:bg-gradient-to-br from-transparent to-[hsl(259,77%,25%)] bg-cover bg-center bg-no-repeat bg-fixed bg-blend-darken items-center border-4 rounded-2xl mx-28  flex flex-row max-lg:flex-col max-sm:mx-8 mb-8'>
+        <div  className='relative border-accent-magenta/60 dark:border-light not-dark:border-dark dark:bg-gradient-to-br from-transparent to-[hsl(259,77%,25%)] bg-cover bg-center bg-no-repeat bg-fixed bg-blend-darken items-center border-4 rounded-2xl mx-28  flex flex-row max-lg:flex-col max-sm:mx-8 mb-8'>
+            <h1 name="За нас" className='absolute -top-8 left-[50%] translate-x-[-50%] text-2xl font-bebas font-bold border-4 rounded-full p-2 bg-light dark:bg-dark'>За нас</h1>
             <div className='flex flex-col justify-between text-pretty font-oswald p-8 w-full xl:text-xl text-[16px] max-md:text-sm first-line:text-2xl'>
             <p className=''><span className='font-bebas font-bold'>Urban Maratonki</span> – мястото за модерни и удобни маратонки!
                 Предлагаме внимателно подбрани модели от водещи марки, които съчетават стил, комфорт и качество.
