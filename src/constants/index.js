@@ -168,10 +168,10 @@ export const contacts = {
   },
   email: {
     title: "Имейл",
-    address: "johndoe@example.com",
+    address: "info@urbanmaratonki.bg",
     icon: email,
     cta: "Пишете ни",
-    ctaAction: () => window.location.href = 'mailto:johndoe@example.com'  // Action for email (send mail)
+    ctaAction: () => window.location.href = 'mailto:info@urbanmaratonki.bg'  // Action for email (send mail)
   }
 };
 

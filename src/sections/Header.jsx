@@ -61,7 +61,7 @@ const Header = () => {
             hasScrolled ? 'py-2 max-md:py-1 not-dark:bg-dark dark:bg-[hsl(259,77%,25%)]' : 'py-6 md:py-4 max-md:py-2')}>
             <nav className='flex justify-between items-center max-md:justify-between'>
             <a href='/' className=''>
-                <img src="./icons/logo.png" alt="logo" width={150}/>
+                <img src="./icons/logo-light.png" alt="logo" width={130}/>
             </a>
             
             <button
