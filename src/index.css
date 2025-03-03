@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
 
 @theme{
     --font-oswald: Oswald, sans-serif;

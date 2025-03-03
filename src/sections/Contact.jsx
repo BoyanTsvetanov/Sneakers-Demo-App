@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
 
         <div className='flex flex-col justify-center items-center mt-10'>
-            <h2 className='text-2xl font-oswald font-bold'>Пратете запитване</h2>
+            <h2 className='text-2xl font-montserrat font-bold'>Пратете запитване</h2>
             <div className='relative border-2 flex mt-3 px-6 py-3 w-[60%] max-lg:w-[80%] justify-between gap-4'>
                 <textarea
                     id="floating_outlined"
@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
         </div>
 
-        <div className='mx-32 max-lg:mx-16 mt-20 font-bebas'>
+        <div className='mx-32 max-lg:mx-16 mt-20 font-montserrat'>
             <h2 className='text-2xl font-bold'>Често задавани въпроси:</h2>
 
             <div className='container relative flex gap-8 mt-10 max-lg:block'>
