@@ -1,21 +1,16 @@
 import React from 'react'
-import Header from './sections/Header'
-import Hero from './sections/Hero'
-import Products from './sections/Products'
-import Info from './sections/Info'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductPage from './pages/ProductPage';
 
 const App = () => {
   return (
-    <main>
-      <Header/>
-      <Hero/>
-      <Products/>
-      <Info/>
-      <Contact/>
-      <Footer/>
-    </main>
+    <Router basename="/Sneakers-Demo-App">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+      </Routes>
+    </Router>
   )
 }
 

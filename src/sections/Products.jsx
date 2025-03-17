@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
 import { products, sneaker_categories } from '../constants'
 import Card from '../components/Card'
 import clsx from 'clsx';
@@ -34,7 +35,7 @@ const Products = () => {
 
             <div className='right-10 w-full rounded-3xl p-1 grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] max-lg:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] max-sm:grid-cols-[repeat(auto-fit,minmax(125px,1fr))] gap-3'>
             {products.map((shoe) => (
-                <Card imgUrl={shoe.imgURL} name={shoe.name} price={shoe.price}></Card>
+                    <Card imgUrl={shoe.imgURL} name={shoe.name} price={shoe.price} id={shoe.id}></Card>
             ))}
         </div>
         </div>
