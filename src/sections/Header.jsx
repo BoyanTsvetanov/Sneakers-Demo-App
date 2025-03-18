@@ -4,6 +4,7 @@ import { navLinks } from '../constants'
 import clsx from 'clsx'
 import { Link as LinkScroll } from "react-scroll";
 import { Sun, Moon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -96,7 +97,7 @@ const Header = () => {
             <div className='flex  p-1 rounded gap-1 items-center'>
                 <Button title="количка" icon="./icons/cart.png"></Button>
                 <div className='w-0.25 h-[24px] bg-light'></div>
-                <Button title="профил" icon="./icons/user-profile.png"></Button>
+                <Link to="/Profile"><Button title="профил" icon="./icons/user-profile.png"></Button></Link>
             </div>
 
             <button className='hidden max-lg:block z-10' onClick={() => setIsOpen((prevState) => !prevState)}>
