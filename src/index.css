@@ -1,37 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Russo+One&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap");
 
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-oswald: Oswald, sans-serif;
+  --font-russo: Russo One, sans-serif;
+  --font-roboto: Roboto, sans-serif;
+  --font-montserrat: Montserrat, sans-serif;
+  --font-bebas: "Bebas Neue", Roboto, sans-serif;
 
-@theme{
-    --font-oswald: Oswald, sans-serif;
-    --font-russo: Russo One, sans-serif;
-    --font-roboto: Roboto, sans-serif;
-    --font-montserrat: Montserrat, sans-serif;
-    --font-bebas: 'Bebas Neue', sans-serif;
-
-    --color-dark: #121212;
-    --color-light: #ffffff;
-    --color-primary-dark: #EAEAEA;
-    --color-primary-light: #222222;
-    --color-secondary: #B0B0B0;
-    --color-accent-magenta: #E6007E;
-    --color-dark-teal: hsl(259,77%,25%);
-    --color-accent-green: #39FF14;
-    --color-button-magenta: #FF007F;
-    --color-hover-magenta: #9B0056;
+  --color-dark: #121212;
+  --color-light: #ffffff;
+  --color-primary-dark: #eaeaea;
+  --color-primary-light: #222222;
+  --color-secondary: #b0b0b0;
+  --color-accent-magenta: #e6007e;
+  --color-dark-teal: hsl(259, 77%, 25%);
+  --color-accent-green: #39ff14;
+  --color-button-magenta: #ff007f;
+  --color-hover-magenta: #9b0056;
 }
 
-
 body {
-    @apply bg-light text-primary-light transition-colors duration-300;
-  }
-  
-  /* Dark Mode */
-  .dark body {
-    @apply bg-dark text-primary-dark;
-  }
+  @apply bg-light text-primary-light transition-colors duration-300;
+}
 
-  /* bg-gradient-to-r from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)] */
+/* Dark Mode */
+.dark body {
+  @apply bg-dark text-primary-dark;
+}
+
+/* bg-gradient-to-r from-[hsl(327,100%,45%)] to-[hsl(259,77%,25%)] */
